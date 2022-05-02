@@ -3,49 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
+  <title>Frontend Mentor | Chat app CSS Illustration</title>
+  <script src="https://kit.fontawesome.com/2a6fc946b5.js" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <!-- The Phone Section -->
+    <div class="mobile">
+      <!-- Heading -->
+      <div class="heading">
+        <div class="wrapper-img-name">
+          <i class="fa-solid fa-angle-left"></i>
+          <img src="images/avatar.jpg" alt="avatar">
+          <div class="infos">
+            <h1>Samuel Green</h1>
+            <p>Available to Walk</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+      <!-- The messages section -->
+      <div class="content">
+        <!-- first 2 messages -->
+        <div class="receiver">
+          <div class="receiver-message text">
+            <p>
+              That sounds great. I'd be <br>
+              happy to discuss more.
+            </p>
+          </div>
+          <div class="receiver-message text">
+            <p>
+              Could you send over some <br> pictures of your dog, please?
+            </p>
+          </div>
+        </div>
+        <!-- Dogs images and messages of the sender -->
+        <div class="wrapper-sender">
+          <div class="sender">
+            <div class="dog-images">
+              <img src="images/dog-image-1.jpg" alt="dog image">
+              <img src="images/dog-image-2.jpg" alt="dog image">
+              <img src="images/dog-image-3.jpg" alt="dog image">
+            </div>
+            <div class="sender-message">
+             <p> Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div class="sender-message">
+              <p>Can you make it?</p>
+            </div>
+          </div>
+        </div>
+        <!-- Replies -->
+        <div class="receiver">
+          <div class="receiver-message text">
+            <p>
+              She looks so happy! The time <br> we discussed works. How <br> long shall I take her out for?
+            </p>
+          </div>
+          <div class="offer">
+            <div class="wrapper">
+              <i class="fa-solid fa-spinner"></i>
+              <p class="duration">30 minute walk</p>
+            </div>
+            <p class="price">$29</p>
+          </div>
+          <div class="offer">
+            <div class="wrapper">
+              <i class="fa-solid fa-spinner"></i>
+              <p class="duration">1 hour walk</p>
+            </div>
+            <p class="price">$49</p> 
+          </div>
+        </div>
+        <div class="send-message">
+          <p>Type a message…</p>
+          <div class="send-it">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-under">
+      <h1>Simple booking</h1>
+      <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate 
+      your walker and book again all through the chat.</p>
+    </div>
+  </main>
 </body>
 </html>
