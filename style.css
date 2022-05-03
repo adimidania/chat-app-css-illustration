@@ -346,9 +346,6 @@ main {
         width: 380px;
         padding:12px;
     }
-    .mobile {
-        width: 350px;
-    }
 }
 
 @media screen and (min-width:700px) {
@@ -379,7 +376,7 @@ main {
     }
 
     .mobile-wrapper, .text-wrapper{
-        width:46%;
+        width:47.5%;
     }
 
     .mobile-wrapper {
@@ -416,12 +413,12 @@ main {
     }
 
     .dark-element-bg {
-        width:500px;
+        width:550px;
         height:100%;
-        border-bottom-right-radius: 370px;
-        border-bottom-left-radius: 370px;
-        top:-30%;
-        left:-50px;
+        border-bottom-right-radius: 620px;
+        border-bottom-left-radius: 620px;
+        top:-12%;
+        left:-120px;
     }
     
     .light-element-bg {
@@ -429,8 +426,9 @@ main {
         height:100%;
         border-top-right-radius: 370px;
         border-top-left-radius: 370px;
-        top:50%;
-        right:-50px;
+        top:19%;
+        opacity: 0.8;
+        right:-180px;
     }
 }
 
